@@ -6,7 +6,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 		
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Nick(y) System</title>
+		<title>Nicky System</title>
 		<style type="text/css">
 				
 		body {
@@ -26,7 +26,7 @@
 			width: 100%;
 			height: 100px; 
 			overflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
-			background: #000000;
+			background: #ffbd20;
 		}
 		
 		#nav {
@@ -35,12 +35,15 @@
 			left: 0; 
 			bottom: 0;
 			width: 230px;
-			overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
-			background: #000000; 		
+			overflow: hidden; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+			background: #2c0f30; 
+			font-size: 11px;
+			
+			
 		}
 		
 		#logo {
-			padding:10px;
+			padding:5px;
 		}
 			
 		
@@ -52,7 +55,8 @@
 			right: 0;
 			bottom: 0;
 			overflow: auto; 
-			background: #000000;
+			background: #2c0f30;
+			font-size: 13px;
 		}
 		
 		.innertube {
@@ -60,7 +64,7 @@
 		}
 		
 		p {
-			color: #FFFFFF;
+			color: #f2eef1;
 		}
 
 		nav ul {
@@ -70,7 +74,7 @@
 		}
 		
 		nav ul a {
-			color: #ffffff;
+			color: #ffa7bf;
 			text-decoration: none;
 		}
 				
@@ -85,22 +89,22 @@
 		}
 			
 		h1 {
- 		 color: #FFFFFF;
+ 		 color: #ffbd20;
 		}
 			
 		h2 {
- 		 color: #ffffff;
+ 		 color: #ffa7bf;
 		}
 			
 		h3 {
- 		 color: #ffffff;
+ 		 color: #e18434;
 		}
 			
 		nameSpace1 {
- 		 color: #DEDEDE;
+ 		 color: #f2eef1;
 		}
 		nameSpace2 {
- 		 color: #DEDEDE;
+ 		 color: #f2eef1;
 		}
 			
 		
@@ -113,7 +117,7 @@
 	<body>
 		
 		<header id="header">
-			<script src="sketch.js"></script>
+			
 			<div id="logo"><img src="images/nslogoW.png" width="90" height="90" alt=""/>
 		
 				</div>
@@ -124,7 +128,7 @@
 			<div class="innertube">
 				<nameSpace1>Nick(y)_</nameSpace1><nameSpace2>System</nameSpace2>
 				
-				<h1>Projects</h1>
+				<h1>Software</h1>
 				<a name="hedjam"><h2>HEDJAM</h2></a>
 				
 				<h3>The Generative Virtual Band</h3>
@@ -152,10 +156,11 @@
 				<br>
 				<br>
 				
+				<h1>Hardware</h1>
 				<a name="bytebox"><h2>ByteBox</h2></a>
 				<h3>Hardware Bytebeat Expression Player</h3>
-				<p><i>*In Development* </i>The ByteBox is an Arduino based device that plays ByteBeat expressions from an SD card.</p>
-				<img src="images/bytebox.png" style="width:560px;">
+				<p><i>*In Development* </i>The ByteBox is an Arduino based device that plays ByteBeat expressions. Also, it has vactrol cv input.</p>
+				<img src="images/bytebox1.png" style="width:560px;">
 				<br>
 				<br>
 			  
@@ -181,19 +186,7 @@
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/JkwaqC_e5ws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<br>
 				<br>
-				
-				<h1>Art</h1>
-				<a name="visual"><h2>Visual</h2></a>
-				<h3>I do drawings for t-shirts</h3>
-				<img src="images/COL.png" style="width:200px;">
-				<img src="images/graf.jpg" style="width:200px;">
-				<img src="images/munee.png" style="width:200px;">
-				<img src="images/skulle.png" style="width:200px;">
-				<img src="images/pmcat.png" style="width:200px;">
-				<img src="images/Slug.png" style="width:200px;">
-				<img src="images/Smokeyes.png" style="width:200px;">
-				<br>
-				
+								
 				<a name="typeface"><h2>Typeface</h2></a>
 				<h3>The Puke Mutant Font</h3>
 				<img src="images/font.png" style="width:560px;">
@@ -227,7 +220,7 @@
 				<h2>Me</h2>
 				<h3>Nick(y) System</h3>
 				
-				<p>Hello, I am a digital Media Artist from Regional Victoria, Australia. I mostly do technology based music and sound stuff. I enjoy performing with live coding or using custom software i've built. I am also an educator. </p>
+				<p>Hi, I am a digital Media Artist from Regional Victoria, Australia. I mostly do technology based music and sound stuff. I enjoy performing with live coding or using custom software i've built. I am also an educator. </p>
 				<p>You can download my CV <a href="assets/NHALL_CV.pdf" download>here.</p>
 				<img src="images/mosh.gif" style="width:560px;"><br>
 				</a>
@@ -240,11 +233,16 @@
 		<nav id="nav">
 			<div class="innertube">
 				
-				<h1>Projects</h1>
+				<h1>Software</h1>
 				<ul>
 				  <li><a href="#hedjam">HEDJAM</a></li>
 					<li><a href="#unsync">UnSync</a></li>
 					<li><a href="#storms">Storms</a></li>
+					
+					</ul>
+				
+				<h1>Hardware</h1>
+				<ul>
 					<li><a href="#bytebox">ByteBox</a></li>
 					</ul>
 				<h1>Music</h1>
@@ -258,8 +256,7 @@
 				</ul>
 				<h1>Art</h1>
 				<ul>
-				  <li><a href="#visual">Visual</a></li>
-					<li><a href="#typeface">TypeFace</a></li>
+				    <li><a href="#typeface">TypeFace</a></li>
 					<li><a href="#video">Video</a></li>
 					
 				<h1>About</h1>
