@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reflections on Pure Data and Identity</title>
+  
+  </head>
+  <body>
+	  <p>
+      I was introduced to Pure Data (Pd) by a co-worker. It’s a programming environment, primarily for audio and music. It does handle text and numbers too. There are externals for video and image manipulation too. I like the vanilla version with nothing attached. Its simple and if I want to do something complicated I have to learn how to make it happen without help.
+
+It became quite a key part of my identity as a creative person very quickly. Any idea that I had around music, I could now do. The projects I envisioned I could never do, due to technical ability, were all now within reach. However, I didn’t really use it for a long time.  The possibilities were there but I was in my 20s and there was a lot of distraction.
+
+I made a ps2 controller into an instrument first. Two oscillators controlled by the thumb sticks. The buttons played drum samples. It was pretty useless but a huge step for me. 
+
+The big change it made for me was around my thinking. I would come across problems to be solved in making music. These were mathematic or logic problems. I found my brain coming up with solutions sub-consciously sometimes months later. I think this is pretty normal when people learn about programming. I became less interested in song writing and more interested in system design for music.
+
+I think it was around 2017/18 I stumbled across a video of Gabrielle Vinazza, an Argentinian philosophy teacher. He was using an object in Pd call the expression object. Here’s what it can do.
+
+He was typing all these very complicated looking maths expressions into it and it made sound. The aesthetic beauty of it floored me. I’d never seen such a literal application of the ‘music is maths’ idea. He later wrote a piece for Toplap about aesthetic philosophy, accessibility and bytebeat. I was hooked. I studied his videos. At some point he did a tutorial in Spanish. I turned on subtitles and auto translate and followed as best I could. Words like division (in relation to numbers) became ‘separate’. It was hard. I practiced everyday for about year. I did these weird bleeps and square wave bloops at an experimental music night in town. I made a mistake, forgetting to close a parenthesis and it went silent. No room for error in this system. A system that turned into Rampcode.
+
+During Covid I was talking online with other electronic musicians in the regional town that I live in. They were organising a gig and I put my hand up to play. It was this amazing night at a very cool winery after the first lockdown finished in Victoria. People were desperate to come out. I was very scared of making a mistake. Imixed this bytebeat style system I still call rampcode with some live sample manipulation and it became kind of like eight bit house music.
+I played and made no syntactical errors, however, the battery died on my Kaos Mini and I had a seven minute panic mid set. I played samples of digital noise to on my sp-505 sampler to hide the confusion and picked up the pieces. It was overall a good experience.
+
+Pd and the expression object was now my instrument. I eventually played again and did a flawless set, from my perspective anyway. I was given feedback that I needed to move more (nope), also someone said that I needed to make Pd look better. That it was too boring. I have played at art galleries, run workshops and did an online gig during another lockdown. It feels very natural now. An extension like guitar used to be. I love doing it. I project my Pd patch onto a wall while playing. People can dance or come and chinstroke at expressions like:
+
+($v1/($v1/6000%4)*($v1%1000%4)%2)*(1-$v1%1000/1000)* 0.5;
+
+That one is quite catchy.
+
+At some point I came to the realisation I was non-binary and felt a little less comfortable performing in the spotlight. A changing identity was always captured and it made me uncomfortable.
+
+I’d recently seen ORCA and became interested in making things for others to use. I imagined what it might be like to have someone discover new ways to use something I’d made. To make things purely for others. I started working on a program called Hedjam. The details of Hedjam’s development are another epic story. 
+
+In a nutshell, it uses Pd as the audio engine but the front end looks like a 2d pixel art video game. Changes to music are made via dialogue with virtual band members. Pd is invisible, chugging along in the background. I had become less interested in system design and more interested in user experience and interfacing with the systems I made.
+
+I learned how to use Pd an audio engine for other things that I built. It can be embedded in hardware and software using libPd. I later made a text interface system in the command line (to me, text feels intuitive for music interaction) that speaks to a Pd patch. I don’t forsee a future music project that I couldn’t implement Pd in. I still use it when making recorded music for DIY plugins and custom patches that are unique. I’ve used it to automate generative remixing. I even did some reactive usb microscopy, sounds changing with the little creatures I collected in puddles. Pd helped me find myself and grow beyond that. And it’s just software.
+
+    </p>
+  </body>
+</html>
