@@ -1,249 +1,46 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SYST3M</title>
+  <link rel="stylesheet" href="style1.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
 
-<html>
-	<head>
-		
-		
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Nicky System</title>
-		<style type="text/css">
-				
-		body {
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			height: 100%; 
-			max-height: 100%; 
-			font-family:Sans-serif;
-			line-height: 1.5em;
-		}
-		
-		#header {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100px; 
-			overflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
-			background: #ffffff;
-			background-image: url('/images/btow.png');
-			
-		}
-		
-		#nav {
-			position: absolute; 
-			top: 100px; 
-			left: 0; 
-			bottom: 0;
-			width: 230px;
-			overflow: hidden; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
-			background: #ffffff; 
-			font-size: 11px;
-			
-			
-		}
-		
-		#logo {
-			padding:5px;
-		}
-			
-		
-		
-		main {
-			position: fixed;
-			top: 100px; /* Set this to the height of the header */
-			left: 230px; 
-			right: 0;
-			bottom: 0;
-			overflow: auto; 
-			background: #ffffff;
-			font-size: 13px;
-		}
-		
-		.innertube {
-			margin: 15px; /* Provides padding for the content */
-		}
-		
-		p {
-			color: #000000;
-		}
+  <header class="header">
+    <a href="index.html">
+      <img src="images/header.png" alt="Header Logo" />
+    </a>
+  </header>
 
-		nav ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-		}
-		
-		nav ul a {
-			color: #000000;
-			text-decoration: none;
-		}
-				
-		/*IE6 fix*/
-		* html body{
-			padding: 100px 0 0 230px; /* Set the first value to the height of the header and last value to the width of the nav */
-			.crosshair {cursor: crosshair;}
-		}
-		
-		* html main{ 
-			height: 100%; 
-			width: 100%; 
-		}
-			
-		h1 {
- 		 color: #000000;
-		}
-			
-		h2 {
- 		 color: #000000;
-		}
-			
-		h3 {
- 		 color: #222323;
-		}
-			
-		nameSpace1 {
- 		 color: #000000;
-		}
-		nameSpace2 {
- 		 color: #000000;
-		}
-			
-		
-		</style>
-		
-		
-	
-	</head>
-	
-	<body>
-		
-		<header id="header">
-			
-			<div id="logo"><img src="images/nslogo-pink.png" width="90" height="90" alt="Nicky System Logo"/>
-		
-				</div>
-      
-		</header>
-				
-		<main>
-			<div class="innertube">
-				<h1>Software</h1>
-				<a name="Garden"><h2>Garden</h2></a>
-				
-				<h3>Electronic Music Performance Tool</h3>
-				<p>WIP A (currently) Python / PD based system for live music performance. Has themes and MIDI output.</p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/pHAJj6vxO5U?si=n_rE341E1szQc6sp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				<p>Download it on itch.io <a href="https://nickysystem.itch.io/garden" target="_blank">here</a>.</p>
-				<br>
-				<br>
-				
-				<a name="HEDJAM"><h2>HEDJAM</h2></a>
-				
-				<h3>The Generative Virtual Band</h3>
-				<p>HEDJAM puts the performer in the role of player character. Dialogue with virtual band members drives a procedural music engine. Good for streaming and projection gigs. Fun to play with.</p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/vtMP-keHpsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<br>
-				<p>Download it on itch.io <a href="https://nickysystem.itch.io/hedjam" target="_blank">here</a>.</p>
-				<br>
-				
-				<a name="ttpl"><h2>Tiny Techno Psuedo Language</h2></a>
-				<h3>A tiny live coding REPL for minimal techno</h3>
-				<p>A Pure Data based command-line live coding system. Contains a 5 piece drum machine, bass synth & melody synth. Built for minimal techno sets. (◕‿◕)</p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/4LYNHHL0aDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p>Download it on github <a href="https://github.com/NickySystem/TinyTechnoPL" target="_blank">here</a>.</p>
-				<br>
-				<br>
-				
-				<a name="unsync"><h2>UnSync</h2></a>
-				
-				<h3>An Asynchronous MIDI Sequencer</h3>
-				<p>UnSync uses collision events to trigger MIDI output. Make sure you have a device hooked up before using.</p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/RcNe77XEg1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<br>
-				<p>Play it on itch.io <a href="https://nickysystem.itch.io/unsync" target="_blank">here</a>.</p>
-				<br>
-				
-											
-				<h1>Music & Sound</h1>
-				<a name="Syst3m"><h3>Syst3m</h3></a>
-				<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1924463261/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nickysystem.bandcamp.com/album/money-skull">=Money Skull= by Nicky System</a></iframe>
-				<br>
-			
-				<a name="antenna"><h3>Antenna Hill</h3></a> 
-				<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=655917587/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://antennahill.bandcamp.com/album/canopy">Canopy by Antenna Hill</a></iframe>
-				<br>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="index.html" aria-label="Home">
+      <img src="images/icons/home.png" alt="Home icon" />
+    </a>
+    <a href="software.html" aria-label="Software">
+      <img src="images/icons/software.png" alt="Software icon" />
+    </a>
+    <a href="music.html" aria-label="Music">
+      <img src="images/icons/music.png" alt="Music icon" />
+    </a>
+    <a href="art.html" aria-label="Art">
+      <img src="images/icons/art.png" alt="Art icon" />
+    </a>
+    <a href="me.html" aria-label="Me">
+      <img src="images/icons/me.png" alt="Me icon" />
+    </a>
+  </nav>
 
-				<a name="gameaudio"><h3>Game Audio</h3></a> 
-				<iframe frameborder="0" src="https://itch.io/embed/2690560" width="552" height="167"><a href="https://nickysystem.itch.io/no-fi-game-sounds">No-Fi Game Sounds by Nicky Syst3m</a></iframe>
-				<br>
-				<a name="algorave"><h2>Algorave</h2></a>
-				<h3>Show us your screens</h3>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/45AFRe5N1sI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/Qh-rJn595cY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/JkwaqC_e5ws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<br>
+  <main class="content">
+    <div id="p5-container"></div>
+  </main>
 
-				<a name="translaboric"><h3>Writing</h3></a>
-				<h2>Books</h2>
-				<p>Translaboric. A sci-fi novella about gender, robots and well-meaning systems. </p>
-				<iframe frameborder="0" src="https://itch.io/embed/2389420?linkback=true" width="552" height="167"><a href="https://nickysystem.itch.io/translaboric">Translaboric by Nicky System</a></iframe>
-				
-				<a name="about">
-				<h1>About</h1></a>
-				<h2>Me</h2>
-				<h3>Nicky System</h3>
-				
-				<p>Hi, I am a non-binary digital media creator from Regional Victoria, Australia. I mostly do technology based music and sound stuff. I enjoy performing with live coding or using custom software i've built. I am also an educator. </p>
-				<p>I make a lot of stuff using Pure Data. I strive to make fun and acessible things.</p>
-				<p>You can download my CV <a href="assets/NHALLCV.pdf" download>here.</p>
-				
-				</a>
-						
-				<a name="now"><h2>Now</h2></a>
-				<h3>What I am currently doing.</h3>
-				<p>At the moment I am:</p>
-				<p>	* Taking a break from my digital identity. </p>
-				<br>
-				</a>
-				
-			</div>
-		</main>
+  <div class="footer">
+    <p><img src="images/lastedit.png" width="150" alt="Last Edit"> ~Mon 3rd Mar 2025</p>
+  </div>
 
-		<nav id="nav">
-			<div class="innertube">
-				
-				<h1>Software</h1>
-				<ul>
-				  
-					<li><a href="#Garden">Garden</a></li>
-					<li><a href="#HEDJAM">HEDJAM</a></li>
-					<li><a href="#ttpl">TTPL</a></li>
-					<li><a href="#unsync">UnSync</a></li>
-					
-					
-					</ul>
-				
-				<h1>Music</h1>
-				<ul>
-				  
-					<li><a href="#Syst3m">Syst3m</a></li>
-					<li><a href="#antenna">Antenna Hill</a></li>
-					<li><a href="#gameaudio">Game Audio</a></li>
-					<li><a href="#algorave">Algorave</a></li>
-					
-				</ul>
-				<h1>Writing</h1>
-				<ul>
-					<li><a href="#translaboric">Translaboric</a></li>
-					
-				<h1>About</h1>
-				<a href="#about">Me</a>
-					
-				<h1>Now</h1>
-				<a href="#now">Now</a>
-				
-			</div>
-		</nav>	
-	</body>
+  <script src="sketch.js"></script>
+</body>
 </html>
