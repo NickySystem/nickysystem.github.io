@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Music - SYST3M</title>
+  <link rel="stylesheet" href="style1.css" />
+  <style>
+    /* Projects grid and cards styling */
+    .projects-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      width: 320px;
+      color: #edf4ff;
+      font-family: monospace, monospace;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .project-card h2 {
+      margin-top: 0;
+      font-weight: 700;
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+
+    .project-card .promo-video iframe {
+      width: 100%;
+      height: 120px;
+      border: none;
+      border-radius: 6px;
+      display: block;
+    }
+
+    /* Responsive fallback */
+    @media (max-width: 700px) {
+      .projects-grid {
+        flex-wrap: wrap;
+      }
+      .project-card {
+        width: 90%;
+        margin: 0 auto 20px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html">
+      <img src="images/header.png" alt="Header Logo" />
+    </a>
+  </header>
+
+  <nav class="nav" aria-label="Main navigation">
+    <a href="index.html" aria-label="Home">
+      <img src="images/icons/home.png" alt="Home icon" />
+    </a>
+    <a href="software.html" aria-label="Software">
+      <img src="images/icons/software.png" alt="Software icon" />
+    </a>
+    <a href="music.html" aria-label="Music">
+      <img src="images/icons/music.png" alt="Music icon" />
+    </a>
+    <a href="art.html" aria-label="Art">
+      <img src="images/icons/art.png" alt="Art icon" />
+    </a>
+    <a href="me.html" aria-label="Me">
+      <img src="images/icons/me.png" alt="Me icon" />
+    </a>
+  </nav>
+
+  <main class="content">
+    <h1>Music Projects</h1>
+    <p>Recorded Music</p>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <h2>Syst3m</h2>
+        <div class="promo-video">
+          <iframe 
+            src="https://bandcamp.com/EmbeddedPlayer/album=1924463261/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/artwork=small/transparent=true/" 
+            seamless 
+            width="100%" 
+            height="120" 
+            style="border:0;" 
+            allow="autoplay; encrypted-media"
+            ></iframe>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2>Antenna Hill</h2>
+        <div class="promo-video">
+          <iframe 
+            src="https://bandcamp.com/EmbeddedPlayer/album=2400111354/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/artwork=small/transparent=true/" 
+            seamless 
+            width="100%" 
+            height="120" 
+            style="border:0;" 
+            allow="autoplay; encrypted-media"
+            ></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p><img src="images/lastedit.png" alt="Last Edit" width="150" /> ~Mon 3rd Mar 2025</p>
+  </footer>
+
+</body>
+</html>

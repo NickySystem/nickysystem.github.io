@@ -1,0 +1,323 @@
+/* Global image responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Body and overall layout */
+body {
+  background-color: #c62b69;
+  font-family: Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  color: #edf4ff;
+}
+
+/* Header section */
+header.header, .header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #c62b69;
+}
+
+header.header img, .header img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Navigation bar - flexbox */
+nav.nav, .nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  background-color: transparent;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Navigation links - smaller buttons */
+nav.nav a, .nav a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+nav.nav a img, .nav a img {
+  width: 100%;
+  height: auto;
+  /* Removed transition and hover effects */
+}
+
+/* Content section */
+main.content, .content {
+  flex: 1;
+  max-width: 1000px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: monospace, monospace;
+  font-size: 20px;
+  text-align: center;
+  color: #edf4ff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* p5.js container styling */
+#p5-container {
+  width: 100%;
+  max-width: 900px;
+  height: 400px; /* fixed height for visible canvas */
+  background-color: #c62b69; /* same as body bg for seamless look */
+  margin: 20px auto;
+  position: relative;
+}
+
+#p5-container canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Footer styling */
+footer.footer, .footer {
+  background-color: #edf4ff;
+  color: #c62b69;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Footer paragraph */
+footer.footer p, .footer p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: #c62b69;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  nav.nav, .nav {
+    gap: 8px;
+  }
+
+  main.content, .content {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  nav.nav a, .nav a {
+    width: 40px;
+    height: 40px;
+  }
+
+  #p5-container {
+    height: 250px;
+  }
+}
+
+/* --------------------------- */
+/* Music page cards styling */
+/* --------------------------- */
+
+.music-container {
+  display: flex !important;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+.music-card {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0.1); /* subtle translucent bg */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.music-card h2 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 1.7rem; /* Try 2rem (32px), or smaller if needed */
+}
+
+
+.music-card iframe {
+  width: 100% !important;
+  height: 120px !important;
+  border-radius: 6px;
+  border: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.music-card p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.music-card a {
+  color: #f171a2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.music-card a:hover,
+.music-card a:focus {
+  text-decoration: underline;
+}
+
+/* Responsive fallback: stack cards vertically on narrow screens */
+@media (max-width: 700px) {
+  .music-container {
+    flex-wrap: wrap;
+  }
+  .music-card {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* --------------------------- */
+/* Software Projects Grid for 3 cards across */
+/* --------------------------- */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+  color: #edf4ff;
+}
+
+.project-card h2 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.project-card iframe {
+  width: 100% !important;
+  height: 180px !important;
+  border-radius: 6px;
+  border: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  color: #f171a2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-card a:hover,
+.project-card a:focus {
+  text-decoration: underline;
+}
+
+/* --------------------------- */
+/* Visual Art Cards */
+/* --------------------------- */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+  color: #edf4ff;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 10px 0 5px 0;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Footer height and sticky footer fix */
+body, html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main.content, .content {
+  flex-grow: 1;
+}
+
+/* Make footer fixed to bottom if content is small */
+footer.footer, .footer {
+  flex-shrink: 0;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+}
